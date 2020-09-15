@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React, { Component } from "react";
+import "./App.css";
+import ContainersCart from "./Redux/Containers/ContainersCart";
+import Footer from "./Components/Footer/Footer";
+import Menu from "./Components/Menu/Menu";
+import ContainersMessage from "./Redux/Containers/ContainersMessage";
+import ContainersProducts from "./Redux/Containers/ContainersProducts";
+import { Provider } from "react-redux";
+import configureStore from "./Redux/configStore";
+const store = configureStore();
+class App extends Component {
+  render() {
+    return (
+      <Provider store={store}>
+        <div className="app">
+          <Menu />
+          <ContainersProducts />
+          <ContainersMessage />
+          <ContainersCart />
+          <Footer />
+        </div>
+      </Provider>
+    );
+  }
 }
-
 export default App;

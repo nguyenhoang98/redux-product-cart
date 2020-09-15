@@ -1,0 +1,12 @@
+.products-cart{
+  width:60% ;
+  height: auto;
+  margin:60px auto ;
+}
+table{
+  width:100% ;
+  height: auto;
+}
+td , th{
+  border-bottom: 1px solid #ccc ;;
+}

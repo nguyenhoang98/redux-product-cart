@@ -1,0 +1,23 @@
+.menu{
+  width : 100% ;
+  height: auto ;
+  background : #333 ;
+}
+.menu::after{
+  content: '';
+  clear: both;
+  display: table;
+}
+.menu a{
+  padding:10px 16px ;
+  display: block;
+  color:white ;
+  text-decoration: none ;
+  float:left ;
+}
+.menu-logo{
+  float:left ;
+}
+.menu-contact{
+  float:right ;
+}

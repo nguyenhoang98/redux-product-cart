@@ -1,0 +1,15 @@
+table td img{
+  width:100px;
+  height: 100px;
+}
+.btn-reduction{
+  background: violet;
+  display: inline-block;
+}
+.btn-increase{
+  background: turquoise;
+  display: inline-block;
+}
+.btn-close{
+  background: red;
+}
